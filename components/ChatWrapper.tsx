@@ -27,14 +27,13 @@ export default function ChatWrapper() {
   };
 
   return (
-    <div className="flex flex-col max-h-[90vh]">
+    <div className="flex flex-col max-h-[100dvh] md:max-h-[90vh]">
       <ChatHeader
         senderName={
           msgs.find((msg) => msg.type === "incoming")?.senderName || "Unknown"
         }
       />
       <ChatWindow messages={msgs} bottomRef={bottomRef} />
-      {/* <ChatInput onSend={handleSend} /> */}
       <ChatInput onSend={handleSend} />
     </div>
   );

@@ -31,7 +31,7 @@ export default function ChatHeader({ senderName }: { senderName: string }) {
             <p>Close</p>
           </button>
         </div>
-        <div className="flex items-center gap-2 mt-2">
+        <div className="flex items-center flex-wrap gap-2 mt-2">
           {tags.slice(0, 4).map((tag) => (
             <div
               key={tag.id}

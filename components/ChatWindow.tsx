@@ -24,7 +24,7 @@ function isGroupEnd(current: Message, next?: Message) {
 
 export default function ChatWindow({ messages, bottomRef }: Props) {
   return (
-    <div className="flex-1 h-[735px] px-4 py-3 bg-white overflow-y-auto custom-scrollbar">
+    <div className="flex-1 max-h-[735px] px-4 py-3 bg-white overflow-y-auto custom-scrollbar">
       {messages.map((msg, i) => {
         const prev = messages[i - 1];
         const next = messages[i + 1];
