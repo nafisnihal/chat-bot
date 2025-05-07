@@ -72,7 +72,7 @@ export default function ChatWindow({ messages, bottomRef }: Props) {
                   </div>
                 </div>
 
-                {/* Outgoing avatar (only shown at end of group) */}
+                {/* Outgoing avatar */}
                 {!isIncoming && !grouped ? (
                   <div className="flex items-end w-6 h-6 mt-1">
                     <Avatar src={msg.avatar} alt={msg.senderName} />
