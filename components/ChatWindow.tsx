@@ -1,5 +1,6 @@
 import { Message } from "@/lib/messages";
 import { format } from "date-fns";
+import Avatar from "./Avatar";
 
 interface Props {
   messages: Message[];
@@ -43,11 +44,11 @@ export default function ChatWindow({ messages, bottomRef }: Props) {
               isLastInGroup ? "mb-5" : ""
             }`}
           >
-            <div className={`w-full`}>
+            <div className={`w-full flex gap-2`}>
               <div
-                className={`flex flex-col ${
+                className={`flex flex-col  ${
                   isIncoming ? "items-start" : "items-end"
-                }`}
+                } flex-1`}
               >
                 {!grouped && (
                   <span
@@ -69,11 +70,13 @@ export default function ChatWindow({ messages, bottomRef }: Props) {
               </div>
 
               {/* Outgoing avatar (only shown at end of group) */}
-              {/* {!isIncoming && isLastInGroup && (
-                <div className="flex items-end">
+              {!isIncoming && !grouped ? (
+                <div className="flex items-end w-6 h-6 mt-1">
                   <Avatar src={msg.avatar} alt={msg.senderName} />
                 </div>
-              )} */}
+              ) : (
+                <div className="w-6 h-6 bg-transparent"></div>
+              )}
             </div>
           </div>
         );

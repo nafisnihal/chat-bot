@@ -16,7 +16,7 @@ export const messages: Message[] = [
     text: "Hey team, I've been having a weird issue 😕",
     timestamp: "2023-11-17T14:48:00",
     senderName: "Jacob Jhones",
-    avatar: "/avatars/jacob.png",
+    avatar: "/Avatar.png",
   },
   {
     id: "2",
@@ -24,7 +24,7 @@ export const messages: Message[] = [
     text: "Every time I try to upload a CSV file to import contacts, it gets stuck at 80% and never finishes.",
     timestamp: "2023-11-17T14:48:40",
     senderName: "Jacob Jhones",
-    avatar: "/avatars/jacob.png",
+    avatar: "/Avatar.png",
   },
   {
     id: "3",
@@ -32,7 +32,7 @@ export const messages: Message[] = [
     text: "Thanks for confirming. Could you upload a screenshot of what you see when it freezes?",
     timestamp: "2023-11-17T14:50:00",
     senderName: "Alex Morgan",
-    avatar: "/avatars/alex.png",
+    avatar: "/Avatar.png",
   },
   {
     id: "4",
@@ -40,7 +40,7 @@ export const messages: Message[] = [
     text: "Sure, Here it is",
     timestamp: "2023-11-17T14:52:40",
     senderName: "Jacob Jhones",
-    avatar: "/avatars/jacob.png",
+    avatar: "/Avatar.png",
   },
   {
     id: "5",
@@ -48,7 +48,7 @@ export const messages: Message[] = [
     text: "Got it, that helps a lot.",
     timestamp: "2023-11-17T14:53:00",
     senderName: "Alex Morgan",
-    avatar: "/avatars/alex.png",
+    avatar: "/Avatar.png",
   },
   {
     id: "6",
@@ -56,7 +56,7 @@ export const messages: Message[] = [
     text: "Also, in the meantime",
     timestamp: "2023-11-17T14:53:00",
     senderName: "Alex Morgan",
-    avatar: "/avatars/alex.png",
+    avatar: "/Avatar.png",
   },
   {
     id: "7",
@@ -64,7 +64,7 @@ export const messages: Message[] = [
     text: "can you try uploading this sample file to check if the issue is file-specific?",
     timestamp: "2023-11-17T14:53:00",
     senderName: "Alex Morgan",
-    avatar: "/avatars/alex.png",
+    avatar: "/Avatar.png",
   },
   {
     id: "8",
@@ -72,6 +72,6 @@ export const messages: Message[] = [
     text: "That worked. So it's my file then?",
     timestamp: "2023-11-17T14:55:40",
     senderName: "Jacob Jhones",
-    avatar: "/avatars/jacob.png",
+    avatar: "/Avatar.png",
   },
 ];

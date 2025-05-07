@@ -21,7 +21,7 @@ export default function ChatWrapper() {
       text,
       timestamp: new Date().toISOString(),
       senderName: "Alex Morgan",
-      avatar: "/avatars/alex.png",
+      avatar: "/Avatar.png",
     };
     setMsgs((prev) => [...prev, newMsg]);
   };
