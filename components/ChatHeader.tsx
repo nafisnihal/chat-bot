@@ -64,7 +64,6 @@ export default function ChatHeader({ senderName }: { senderName: string }) {
           </div>
         </div>
       </div>
-      <SessionTag />
     </div>
   );
 }
