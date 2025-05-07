@@ -1,5 +1,4 @@
 import { CircleCheck, Tag } from "lucide-react";
-import SessionTag from "./SessionTag";
 
 export default function ChatHeader({ senderName }: { senderName: string }) {
   const tags = [
@@ -38,7 +37,7 @@ export default function ChatHeader({ senderName }: { senderName: string }) {
               className="flex items-center gap-1 text-[#425066] px-2 py-1"
             >
               <Tag size={14} />
-              <span>{tag.name}</span>
+              <span className="text-[13px]">{tag.name}</span>
             </div>
           ))}
           {tags.length > 4 && (
