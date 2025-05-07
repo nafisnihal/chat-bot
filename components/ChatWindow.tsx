@@ -39,15 +39,16 @@ export default function ChatWindow({ messages, bottomRef }: Props) {
         return (
           <div
             key={msg.id}
-            className={`flex ${
-              isIncoming ? "justify-start" : "justify-end text-right"
-            } ${isLastInGroup ? "mb-5" : ""}`}
+            className={`flex ${isIncoming ? "justify-start" : "justify-end"} ${
+              isLastInGroup ? "mb-5" : ""
+            }`}
           >
-            <div
-              className={`flex ${isIncoming ? "" : "gap-2"} w-full max-w-[85%]`}
-            >
-              {/* Incoming: only message bubble */}
-              <div className="flex flex-col flex-1">
+            <div className={`w-full`}>
+              <div
+                className={`flex flex-col ${
+                  isIncoming ? "items-start" : "items-end"
+                }`}
+              >
                 {!grouped && (
                   <span
                     className={`text-[10px] text-[#6C7584] ${
@@ -60,7 +61,7 @@ export default function ChatWindow({ messages, bottomRef }: Props) {
 
                 <div className={`mt-1`}>
                   <div
-                    className={`px-4 py-3 ${bubbleStyle} text-sm inline-block max-w-xl`}
+                    className={`px-4 py-3 ${bubbleStyle} text-sm font-normal inline-block max-w-xl`}
                   >
                     {msg.text}
                   </div>
